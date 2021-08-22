@@ -1,0 +1,96 @@
+@use "@material/card/index" as card;
+@use "@material/elevation/index" as elevation;
+@use "@material/typography/mdc-typography";
+
+@include card.core-styles;
+@include elevation.core-styles;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mdc-card {
+  padding: 16px;
+  margin: 4px;
+}
+
+.mdc-card__primary-action:first-child,
+.mdc-card__primary-action:last-child {
+  border-radius: 4px;
+}
+
+img {
+  height: 92px;
+  width: 92px;
+  margin: 7px 8px 23px 8px;
+  object-fit: contain;
+}
+
+.mdc-typography--headline6 {
+  opacity: 0.87;
+}
+
+.mdc-typography--body2 {
+  opacity: 0.6;
+}
+
+.dark {
+  display: none;
+}
+
+.invert-light {
+  filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    --mdc-theme-surface: #1e1e1e;
+    --mdc-ripple-color: white;
+    color: white;
+  }
+
+  .light {
+    display: none;
+  }
+
+  .dark {
+    display: block;
+  }
+
+  .invert-dark {
+    filter: invert(1);
+  }
+
+  .invert-light {
+    filter: none;
+  }
+}
+
+@media (hover: hover) {
+  .mdc-card {
+    box-shadow: elevation.elevation-box-shadow(0), 0 0 0 1px #e0e0e0;
+  }
+
+  .mdc-card:hover {
+    @include elevation.elevation(4);
+  }
+}
+
+@media (hover: hover) and (prefers-color-scheme: dark) {
+  .mdc-card {
+    --mdc-theme-surface: #121212;
+    box-shadow: elevation.elevation-box-shadow(0), 0 0 0 1px #2f2f2f;
+  }
+
+  .mdc-card:hover {
+    @include card.fill-color(#272727);
+  }
+}

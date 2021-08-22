@@ -1,0 +1,28 @@
+{
+  "name": "@iammajo/website",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.2",
+    "vite": "^2.4.3",
+    "vite-plugin-imagemin": "^0.4.1"
+  },
+  "volta": {
+    "node": "16.5.0",
+    "npm": "7.20.1"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.0",
+    "@material/card": "^11.0.0",
+    "@material/elevation": "^11.0.0",
+    "@material/ripple": "^11.0.0",
+    "@material/typography": "^11.0.0"
+  },
+  "browserslist": "defaults and supports es6-module and supports es6-module-dynamic-import, not opera > 0, not samsung > 0, not and_qq > 0"
+}
