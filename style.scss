@@ -7,6 +7,8 @@
 
 html {
   font-size: 16px;
+  max-width: 875px;
+  margin: auto;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
 .mdc-card {
   padding: 16px;
   margin: 4px;
+  @include elevation.elevation(1, #ff4453);
 }
 
 .mdc-card__primary-action:first-child,
@@ -68,18 +71,18 @@ img {
 
 @media (hover: hover) {
   .mdc-card {
-    box-shadow: elevation.elevation-box-shadow(0), 0 0 0 1px #e0e0e0;
+    box-shadow: elevation.elevation-box-shadow(0, #ff4453), 0 0 0 1px #ffe9ea;
   }
 
   .mdc-card:hover {
-    @include elevation.elevation(4);
+    @include elevation.elevation(4, #ff4453);
   }
 }
 
 @media (hover: hover) and (prefers-color-scheme: dark) {
   .mdc-card {
     --mdc-theme-surface: #121212;
-    box-shadow: elevation.elevation-box-shadow(0), 0 0 0 1px #2f2f2f;
+    box-shadow: elevation.elevation-box-shadow(0, #ff4453), 0 0 0 1px #2e181a;
   }
 
   .mdc-card:hover {
