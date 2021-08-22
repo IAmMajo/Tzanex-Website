@@ -23,6 +23,10 @@ body {
   @include elevation.elevation(1, #ff4453);
 }
 
+.mdc-card:active {
+  --mdc-ripple-color: #ff4453;
+}
+
 .mdc-card__primary-action:first-child,
 .mdc-card__primary-action:last-child {
   border-radius: 4px;
