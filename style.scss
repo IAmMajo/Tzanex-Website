@@ -1,8 +1,7 @@
-@use "@material/card/index" as card;
+@use "@material/card/mdc-card";
 @use "@material/elevation/index" as elevation;
 @use "@material/typography/mdc-typography";
 
-@include card.core-styles;
 @include elevation.core-styles;
 
 html {
@@ -86,6 +85,6 @@ img {
   }
 
   .mdc-card:hover {
-    @include card.fill-color(#272727);
+    --mdc-theme-surface: #272727;
   }
 }
