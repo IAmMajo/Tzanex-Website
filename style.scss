@@ -47,12 +47,17 @@ img {
   object-fit: contain;
 }
 
-.mdc-typography--headline6,
+h6,
+p {
+  margin: 0;
+}
+
+h6,
 h2 {
   opacity: 0.87;
 }
 
-.mdc-typography--body2 {
+p {
   opacity: 0.6;
 }
 
