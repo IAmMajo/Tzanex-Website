@@ -7,15 +7,15 @@
     "serve": "vite preview"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.3",
-    "prettier": "^2.3.2",
-    "sass": "^1.38.2",
-    "vite": "^2.5.1",
+    "autoprefixer": "^10.3.4",
+    "prettier": "^2.4.0",
+    "sass": "^1.40.1",
+    "vite": "^2.5.7",
     "vite-plugin-imagemin": "^0.4.5"
   },
   "volta": {
-    "node": "14.17.5",
-    "npm": "7.21.1"
+    "node": "14.17.6",
+    "npm": "7.23.0"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
