@@ -14,7 +14,7 @@ body {
   margin: 49.8px 12px 12px;
 }
 
-h2 {
+.mdc-typography--headline2 {
   text-align: center;
   margin: 45.8px 0;
 }
@@ -47,17 +47,17 @@ img {
   object-fit: contain;
 }
 
-h6,
-p {
+.mdc-typography--headline6,
+.mdc-typography--body2 {
   margin: 0;
 }
 
-h6,
-h2 {
+.mdc-typography--headline6,
+.mdc-typography--headline2 {
   opacity: 0.87;
 }
 
-p {
+.mdc-typography--body2 {
   opacity: 0.6;
 }
 
