@@ -74,7 +74,7 @@ PERFORMANCE OF THIS SOFTWARE.
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
- */function v(a){return a===void 0&&(a=window),L(a)?{passive:!0}:!1}function L(a){a===void 0&&(a=window);var i=!1;try{var t={get passive(){return i=!0,!1}},e=function(){};a.document.addEventListener("test",e,t),a.document.removeEventListener("test",e,t)}catch(n){i=!1}return i}/**
+ */function v(a){return a===void 0&&(a=window),L(a)?{passive:!0}:!1}function L(a){a===void 0&&(a=window);var i=!1;try{var t={get passive(){return i=!0,!1}},e=function(){};a.document.addEventListener("test",e,t),a.document.removeEventListener("test",e,t)}catch{i=!1}return i}/**
  * @license
  * Copyright 2018 Google Inc.
  *
