@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
-import viteImagemin from "vite-plugin-imagemin";
+import compress from "vite-plugin-compress";
 
 export default defineConfig({
   build: { outDir: "docs" },
-  plugins: [viteImagemin()],
+  plugins: [compress({ brotli: false })],
 });
