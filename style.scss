@@ -122,7 +122,7 @@ img {
 
 @media (min-width: 320px) {
   .mdc-card {
-    width: calc(100% / 2 - 8px);
+    width: calc(50% - 8px);
   }
 }
 
@@ -134,12 +134,12 @@ img {
 
 @media (min-width: 616px) {
   .mdc-card {
-    width: calc(100% / 4 - 8px);
+    width: calc(25% - 8px);
   }
 }
 
 @media (min-width: 764px) {
   .mdc-card {
-    width: calc(100% / 5 - 8px);
+    width: calc(20% - 8px);
   }
 }
